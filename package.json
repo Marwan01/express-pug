@@ -24,5 +24,8 @@
     "http-errors": "^1.7.3",
     "jade-bootstrap": "^1.0.14",
     "pug": "^2.0.4"
+  },
+  "engines": {
+    "node": "^8.0.0"
   }
 }
