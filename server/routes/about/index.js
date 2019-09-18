@@ -4,7 +4,7 @@ const router = express.Router();
 
 module.exports = () => {
     router.get('/', (req, res, next) => {
-        return res.send('About Section');
+        return res.render('about');
     });
 
     router.get('/:name', (req, res, next) => {

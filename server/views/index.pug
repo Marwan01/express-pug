@@ -1,89 +1,30 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    title Pug · Express
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    link(href='/css/bootstrap.css', rel='stylesheet')
-    style(type='text/css').
-      body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      }
-      /* Custom container */
-      .container-narrow {
-      margin: 0 auto;
-      max-width: 700px;
-      }
-      .container-narrow > hr {
-      margin: 30px 0;
-      }
-      /* Main marketing message and sign up button */
-      .jumbotron {
-      margin: 60px 0;
-      text-align: center;
-      }
-      .jumbotron h1 {
-      font-size: 72px;
-      line-height: 1;
-      }
-      .jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-      }
-      /* Supporting marketing content */
-      .marketing {
-      margin: 60px 0;
-      }
-      .marketing p + h4 {
-      margin-top: 28px;
-      }
-    link(href='/css/bootstrap-responsive.css', rel='stylesheet')
-    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon-57-precomposed.png')
-    link(rel='shortcut icon', href='/ico/favicon.png')
-  body
-    .container-narrow
-      .masthead
-        ul.nav.nav-pills.pull-right
-          li.active
-            a(href='/') Home
-          li
-            a(href='/about') About
-          li
-            a(href='/feedback') Feedback
-        h3.muted Pug - Express
-      hr
-      .jumbotron
+extends layout/navbar
+block content
+    .jumbotron
         h1 NodeJS, ExpressJS, and Pug in Play
         p.lead
-          | How to create fully server-side renderable web pages using express and pug.
+            | How to create fully server-side renderable web pages using express and pug.
         a.btn.btn-large.btn-success(href='https://expressjs.com/en/guide/using-template-engines.html') Integration Documentation
-      hr
-      .row-fluid.marketing
-        .span6
-          h4 Portable
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          h4 Reusable
-          p
-            | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          h4 Fast
-          p Maecenas sed diam eget risus varius blandit sit amet non magna.
-        .span6
-          h4 Scalable
-          p
-            | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          h4 Secure
-          p
-            | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          h4 Editable
-          p Maecenas sed diam eget risus varius blandit sit amet non magna.
-      hr
-      .footer
-        p © Mar 2019
-  include ./partials/scripts
+        hr
+        .row-fluid.marketing
+            .span6
+                h4 Portable
+                p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                h4 Reusable
+                p
+                | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                h4 Fast
+                p Maecenas sed diam eget risus varius blandit sit amet non magna.
+            .span6
+                h4 Scalable
+                p
+                | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                h4 Secure
+                p
+                | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                h4 Editable
+            p Maecenas sed diam eget risus varius blandit sit amet non magna.
+        hr
+        footer
+            p © Mar 2019
