@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Marwan01/node-express#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "heroku-cli": "^7.0.9",
     "http-errors": "^1.7.3",
     "jade-bootstrap": "^1.0.14",
